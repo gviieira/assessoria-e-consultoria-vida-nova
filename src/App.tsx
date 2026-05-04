@@ -431,9 +431,6 @@ export default function App() {
         {/* Oportunidade de Mudança Section (High Contrast / Dark Blue) */}
         <section className="py-28 relative overflow-hidden bg-[#0A192F]" id="contato">
           <div className="absolute inset-0 bg-[#0A192F] -z-10" />
-          <div className="absolute top-0 right-0 p-20 opacity-5 pointer-events-none hidden lg:block">
-            <img src={LOGO_URL} alt="Logo Bg" className="h-96 grayscale" />
-          </div>
           
           <div className="container mx-auto px-4 text-center">
             <motion.div
