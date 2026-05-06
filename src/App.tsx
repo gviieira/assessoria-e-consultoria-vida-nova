@@ -20,6 +20,8 @@ import {
   Car,
   Clock,
   Star,
+  Instagram,
+  Facebook,
   Shield,
   MousePointer2
 } from 'lucide-react';
@@ -146,11 +148,33 @@ export default function App() {
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             <NavItem href="#inicio">Início</NavItem>
             <NavItem href="#sobre">Sobre</NavItem>
             <NavItem href="#servicos">Serviços</NavItem>
             <NavItem href="#diferenciais">Diferenciais</NavItem>
+            
+            <div className="flex items-center gap-3 border-l border-slate-100 pl-6 mr-2">
+              <a 
+                href="https://www.instagram.com/consultoria_vida_nova/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-slate-400 hover:text-green-600 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="https://www.facebook.com/consultoriaeassessoriavidanova/?ref=1" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-slate-400 hover:text-green-600 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+            </div>
+
             <a 
               href={WHATSAPP_LINK} 
               target="_blank"
@@ -196,6 +220,26 @@ export default function App() {
                 >
                   <MessageCircle size={24} />
                   Falar no WhatsApp
+                </a>
+              </div>
+              <div className="flex justify-center gap-8 pt-4">
+                <a 
+                  href="https://www.instagram.com/consultoria_vida_nova/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-slate-400 hover:text-green-600 flex flex-col items-center gap-1"
+                >
+                  <Instagram size={32} />
+                  <span className="text-[10px] font-bold uppercase tracking-widest">Instagram</span>
+                </a>
+                <a 
+                  href="https://www.facebook.com/consultoriaeassessoriavidanova/?ref=1" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-slate-400 hover:text-green-600 flex flex-col items-center gap-1"
+                >
+                  <Facebook size={32} />
+                  <span className="text-[10px] font-bold uppercase tracking-widest">Facebook</span>
                 </a>
               </div>
             </nav>
@@ -523,10 +567,23 @@ export default function App() {
           
           <div className="pt-10 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-600">
             <p>© {new Date().getFullYear()} {COMPANY_NAME}. Todos os direitos reservados.</p>
-            <div className="flex gap-10">
-              <span className="hover:text-white cursor-pointer">Privacidade</span>
-              <span className="hover:text-white cursor-pointer">Termos</span>
-              <a href={WHATSAPP_LINK} className="text-green-600 hover:text-green-400 font-bold">Falar com Consultor</a>
+            <div className="flex gap-8">
+              <a 
+                href="https://www.instagram.com/consultoria_vida_nova/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-green-500 transition-colors flex items-center gap-2"
+              >
+                <Instagram size={14} /> Instagram
+              </a>
+              <a 
+                href="https://www.facebook.com/consultoriaeassessoriavidanova/?ref=1" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-green-500 transition-colors flex items-center gap-2"
+              >
+                <Facebook size={14} /> Facebook
+              </a>
             </div>
           </div>
         </div>
